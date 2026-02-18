@@ -2,6 +2,3 @@ mountpoints:
   /:
     url: https://content.da.live/rohitgupta25/edscitisignal/
     type: markup
-
-folders:
-  /products/: /products/default

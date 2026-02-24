@@ -1,0 +1,64 @@
+.management .management__list {
+  display: grid;
+  gap: 24px;
+}
+
+.management .management__card {
+  border: 1px solid var(--color-neutral-300);
+  border-radius: 8px;
+  padding: 20px;
+  background: var(--background-color);
+}
+
+.management .management__title {
+  margin: 0;
+  font-size: var(--type-heading-4-size);
+}
+
+.management .management__subtitle {
+  margin: 8px 0 0;
+  color: var(--color-neutral-700);
+  font-size: var(--type-body-2-size);
+}
+
+.management .management__details {
+  margin: 16px 0 0;
+  display: grid;
+  gap: 10px;
+}
+
+.management .management__detail {
+  display: grid;
+  grid-template-columns: minmax(180px, 260px) 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.management .management__detail dt {
+  margin: 0;
+  font-weight: 600;
+  color: var(--color-neutral-900);
+  text-transform: capitalize;
+}
+
+.management .management__detail dd {
+  margin: 0;
+  color: var(--color-neutral-800);
+  overflow-wrap: anywhere;
+}
+
+.management .management__detail a {
+  color: var(--link-color);
+}
+
+.management .management__message {
+  margin: 0;
+  color: var(--color-neutral-700);
+}
+
+@media (max-width: 767px) {
+  .management .management__detail {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+}
